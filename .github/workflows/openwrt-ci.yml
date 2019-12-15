@@ -187,10 +187,10 @@ jobs:
           # # CONFIG_TARGET_IMAGES_PAD is not set
           # # CONFIG_VMDK_IMAGES is not set
           # EOF
-cat >> .config <<EOF
-CONFIG_TARGET_x86=y
-CONFIG_TARGET_x86_64=y
-CONFIG_TARGET_x86_64_Generic=y
+            cat >> .config <<EOF
+            CONFIG_TARGET_x86=y
+            CONFIG_TARGET_x86_64=y
+            CONFIG_TARGET_x86_64_Generic=y
 CONFIG_ARIA2_ASYNC_DNS=y
 CONFIG_ARIA2_BITTORRENT=y
 CONFIG_ARIA2_COOKIE=y
