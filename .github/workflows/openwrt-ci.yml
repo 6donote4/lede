@@ -741,7 +741,7 @@ jobs:
            # CONFIG_TARGET_ROOTFS_SQUASHFS is not set
            # CONFIG_VMDK_IMAGES is not set
            CONFIG_VPNC_GNUTLS=y
-  EOF
+          EOF
           # 常用LuCI插件选择:
           # cat >> .config <<EOF
           # CONFIG_PACKAGE_luci-app-adbyby-plus=y
