@@ -11,7 +11,7 @@ name: OpenWrt-CI
 
 on:
   schedule:
-    - cron: 0 20 * * 3
+    - cron: 0 20 * * *
   push:
     branches: 
       - master
@@ -160,7 +160,7 @@ jobs:
            CONFIG_GNUTLS_HEARTBEAT=y
            CONFIG_GNUTLS_OCSP=y
            CONFIG_GNUTLS_PSK=y
-           CONFIG_GRUB_TITLE="kvmLEDE"
+           CONFIG_GRUB_TITLE="vmOpenWRT"
            CONFIG_KERNEL_BLK_DEV_THROTTLING=y
            CONFIG_KERNEL_CFQ_GROUP_IOSCHED=y
            CONFIG_KERNEL_CFS_BANDWIDTH=y
@@ -805,10 +805,8 @@ jobs:
 
       - name: Compile firmware
         run: |
-          # echo -e "$(nproc) thread build."
-          # make -j$(nproc) V=s
-          echo -e "$(nproc) thread build."
-          make -j1 V=s
+           echo -e "$(nproc) thread build."
+           make -j$(nproc) V=s
 
 
       - name: Assemble artifact
