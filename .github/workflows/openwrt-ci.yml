@@ -158,7 +158,6 @@ jobs:
            CONFIG_PACKAGE_luci-app-wrtbwmon=y
 
           # LuCI主题:
-           cat >> .config <<EOF
            CONFIG_PACKAGE_luci-theme-argon=y
            CONFIG_PACKAGE_luci-theme-netgear=y
 
