@@ -40,15 +40,16 @@ fi
 
 merging() {
     git remote add upstream https://github.com/coolsnowwolf/lede.git;
+    git pull https://github.com/coolsnowwolf/lede.git --no-edit --strategy-option ours
     git fetch upstream;
     git checkout master;
     git merge upstream/master;
-    git push;
+    git push origin master ;
 }
 
 ARGS=( "$@" )
 
-while [[ -n "$1" ]]; 
+while [[ -n "$1" ]];
 do
 	case "$1" in
            -m)
@@ -64,7 +65,7 @@ do
 			echo $VERSION
 			exit 0
 			;;
-	
+
 	    *)
 			echo  "Invalid parameter $1" 1>&2
 			exit 1
