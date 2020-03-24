@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 #========================================
 #   Linux Distribution: Manjaro/Debian 8+/
 #   Author: 6donote4 <mailto:do_note@hotmail.com>
