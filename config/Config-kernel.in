@@ -49,6 +49,10 @@ config KERNEL_DEBUG_FS
 config KERNEL_MIPS_FP_SUPPORT
 	bool
 	default y
+<<<<<<< HEAD
+=======
+	depends on (mips || mipsel || mips64 || mips64el)
+>>>>>>> 70b6c0243254f4253ece049c72c95c0deca5d3ad
 
 config KERNEL_ARM_PMU
 	bool
